@@ -46,7 +46,10 @@
             [[NSFileManager defaultManager] createDirectoryAtPath:destinatedDirectory withIntermediateDirectories:YES attributes:nil error:nil];
         }
         // .h
-        NSMutableString *headerFile = [NSMutableString stringWithFormat:@"//\n//  %@.h\n//  Auto Created by NSDictionary+CreateModel.h on %@.\n//\n\n", modelName, [NSDate new]];
+        NSDateFormatter *dateFormatter = [NSDateFormatter new];
+        dateFormatter.dateFormat = @"yyyy/MM/dd HH:mm:ss";
+        NSString *dateString = [dateFormatter stringFromDate:[NSDate new]];
+        NSMutableString *headerFile = [NSMutableString stringWithFormat:@"//\n//  %@.h\n//  Auto Created by NSDictionary+CreateModel.h on %@.\n//\n\n", modelName, dateString];
         [headerFile appendString:@"#import <Foundation/Foundation.h>\n\n"];
         NSString *interface = [NSString stringWithFormat:@"@interface %@ : NSObject\n", modelName];
         [headerFile appendString:interface];
