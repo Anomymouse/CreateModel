@@ -49,7 +49,7 @@
         NSDateFormatter *dateFormatter = [NSDateFormatter new];
         dateFormatter.dateFormat = @"yyyy/MM/dd HH:mm:ss";
         NSString *dateString = [dateFormatter stringFromDate:[NSDate new]];
-        NSMutableString *headerFile = [NSMutableString stringWithFormat:@"//\n//  %@.h\n//  Auto Created by NSDictionary+CreateModel.h on %@.\n//\n\n", modelName, dateString];
+        NSMutableString *headerFile = [NSMutableString stringWithFormat:@"//\n//  %@.h\n//  Auto Created by CreateModel on %@.\n//\n\n", modelName, dateString];
         [headerFile appendString:@"#import <Foundation/Foundation.h>\n\n"];
         NSString *interface = [NSString stringWithFormat:@"@interface %@ : NSObject\n", modelName];
         [headerFile appendString:interface];
@@ -83,7 +83,7 @@
         
         
         // .m
-        NSMutableString *implementationFile = [NSMutableString stringWithFormat:@"//\n//  %@.m\n//  Auto Created by CreateModel on %@.\n//\n\n", modelName, [NSDate new]];
+        NSMutableString *implementationFile = [NSMutableString stringWithFormat:@"//\n//  %@.m\n//  Auto Created by CreateModel on %@.\n//\n\n", modelName, dateString];
         [implementationFile appendString:[NSString stringWithFormat:@"#import \"%@.h\"\n\n", modelName]];
         [implementationFile appendString:[NSString stringWithFormat:@"@implementation %@\n\n@end", modelName]];
         NSData *implementationData = [implementationFile dataUsingEncoding:NSUTF8StringEncoding];

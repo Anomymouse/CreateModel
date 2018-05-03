@@ -47,6 +47,7 @@
 		BC1F540E209AECCB00878B11 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BC1F540F209AECCB00878B11 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC1F541A209AEF1B00878B11 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BC1F541B209AFDB100878B11 /* CreateModel.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = CreateModel.podspec; sourceTree = "<group>"; };
 		C32A7AE3E4C9870FEFA05102 /* libPods-CreateModelTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CreateModelTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEC78C1A29660A74ACE2F57D /* Pods-CreateModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreateModel.release.xcconfig"; path = "Pods/Target Support Files/Pods-CreateModel/Pods-CreateModel.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +86,7 @@
 		BC1F53D4209AEA9800878B11 = {
 			isa = PBXGroup;
 			children = (
+				BC1F541B209AFDB100878B11 /* CreateModel.podspec */,
 				BC1F541A209AEF1B00878B11 /* README.md */,
 				BC1F53DF209AEA9800878B11 /* CreateModel */,
 				BC1F53F8209AEA9B00878B11 /* CreateModelTests */,
