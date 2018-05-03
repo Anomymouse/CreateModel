@@ -1,0 +1,16 @@
+PODS:
+  - CreateModel (1.0.0)
+
+DEPENDENCIES:
+  - CreateModel (from `./`)
+
+EXTERNAL SOURCES:
+  CreateModel:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  CreateModel: 8eae080e8d7eb78180d4a0f089b6df71ecc3e6c1
+
+PODFILE CHECKSUM: d3b8aa0bbd96c0e9cb37b4211c9c62356c7dd784
+
+COCOAPODS: 1.5.0
