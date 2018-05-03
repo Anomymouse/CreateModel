@@ -7,5 +7,5 @@
 
 ## 使用
 1. 把文件拖进工程里面，也方便做一些定制。
-2. Cocoapods待支持。
+2. Cocoapods: `pod 'CreateModel' `
 
