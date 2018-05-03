@@ -46,7 +46,7 @@
             [[NSFileManager defaultManager] createDirectoryAtPath:destinatedDirectory withIntermediateDirectories:YES attributes:nil error:nil];
         }
         // .h
-        NSMutableString *headerFile = [NSMutableString stringWithFormat:@"//\n//  %@.h\n//  Auto Created by NSDictionary+CreateModel.h on %@.\n//  author: liaochaolong\n//\n\n", modelName, [NSDate new]];
+        NSMutableString *headerFile = [NSMutableString stringWithFormat:@"//\n//  %@.h\n//  Auto Created by NSDictionary+CreateModel.h on %@.\n//\n\n", modelName, [NSDate new]];
         [headerFile appendString:@"#import <Foundation/Foundation.h>\n\n"];
         NSString *interface = [NSString stringWithFormat:@"@interface %@ : NSObject\n", modelName];
         [headerFile appendString:interface];
